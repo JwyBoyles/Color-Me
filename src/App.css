@@ -1,38 +1,198 @@
+
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
+}
+
+.content {
+  min-width: 80%;
+  display: flex;
   flex-direction: column;
+}
+
+.Header{
+ min-height: 10%;
+ border-left: 1px solid;
+ border-bottom: 2px solid;
+ text-align: center;
+ font-size: 36px;
+}
+
+.Sidebar {
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Sidebar > ul {
+  font-size: 36px;
+}
+
+.selectionPanel{
+  display: flex;
+  
+}
+
+.selectionPanel > div {
+  border: 1px solid black;
+  padding: 3.3px;
+  font-size: 11px;
+}
+
+
+
+.formBox {
+  border: 3px solid black;
+  margin: 3rem;
+  position: relative;
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  text-shadow: none;
+  min-height: 22rem;
+  max-width: 17rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.showStyleSheet {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 3px;
+}
+
+.clearStyleSheet{
+  align-self: flex-start;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 3px;
+}
+
+.showStyleSheet:hover {
+  background-color: grey;
+}
+
+.Body{
+  min-height: 78vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bodyButton{
+  min-width: 12rem;
+  min-height: 5rem;
+  padding: 2rem;
+  align-self: center;
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
+
+.squareOne{
+  border: 2px solid;
+  width: 70%;
+  align-self: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.titleText{
+  font-size: 48px;
+}
+
+.bodyText{
+  font-size: 18px;
+}
+
+.textInputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.textInputs > div > label {
+  margin-right: 2rem;
+}
+
+.textInputs > div > input {
+  width: 8rem;
+  
+}
+
+.textInputs > div  {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+
+.Footer{
+  border-top: 2px solid;
+  border-left: 1px solid;
+  min-height: 10%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Styling{
+  min-height: 100%;
+  position: fixed;
+  min-width: 100vw;
+  z-index: 3;
+  background-color:rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stylingContainer {
+  background-color: white;
+  display: flex;
 }
+
+.stylingContainer > img {
+  align-self: flex-start;
+  width: 4rem;
+}
+
+.sectionStyle  {
+  margin-left: 1rem;
+}
+
+
+.sectionStyle > div {
+  display: flex;
+  align-items: center;
+  
+}
+
+.sectionStyle > h4 {
+  margin-bottom: 0;  
+}
+
+.sectionStyle > div > label {
+  margin-right: 1rem;
+}
+
+.divider{
+  border: 1px solid black;
+  height: 27rem;
+  margin: 1rem;
+  align-self: center;
+}
+
+
