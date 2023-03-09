@@ -1,70 +1,17 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Color Me is a website that is used to test out color combinations on different elements and generate color schemes.
 
-## Available Scripts
+Color Me uses React to handle DOM manipulation and to create a dynamic stylesheet for each element. Users have a form on the website that they can use to plug in different color values, 
+such as hexadecimals, RGB or CSS color names. This form then changes the values being sent to each element so that the user can modify the element's color in real time. 
+If a user is unfamiliar with CSS styling they can still use the application. I've included a set of pre-made styles that user can navigate through with a click of a button. 
+The values of the pre-made styles then populate the control form. This allows the users to see how I built the styles and also see what types of values are acceptable. 
+I intentionally used a variety of different units in the pre-made styles so that when users looks at them they'll see some colors displayed as #000000, "black", or rgb (0, 0, 0). 
+This lets the user know what they themselves can use. After the user finishes styling they can generate a style sheet, to get the full picture of what they've done or to use for their own
+projects if they would like.
 
-In the project directory, you can run:
+The website can be found at https://color-me.vercel.app/
 
-### `npm start`
+To run Color Me on your own machine download the files and enter npm start in the project directory. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The inspiration for this site came from when I was trying to finalize the colors on another project and every time I'd change the color of one element I would have to then change the rest of the elements to get them to blend in properly. After that I started looking to see if there were any websites that let you test out color schemes on different elements; but i could not find one so I decided to build it myself. The intent behind the design was to have all the foundational sections of most websites, such as Header, Body, Footer, Buttons. Then having an interface on the site where you can style those sections. During development I found that the site didn't have enough room to fit the interface so I created a Sidebar to host the form and give another section to style.
+In the future I would like to get rid of the form entirely and make editing the elements done by clicking on them. After clicking a small div would pop up with the elements values and the user could edit the colors there. I think that this would take a lot of bulk out of the application and make things look a little smoother.
